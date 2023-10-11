@@ -1,0 +1,19 @@
+{
+  "aws_profile": "eq-stage",
+  "aws_region": "us-east-1",
+  "lambda_function_create": true,
+  "lambda_function_map": {
+    "eq-stage-aws-health-page-status": {
+      "lambda_function_name": "aws-health-page-status",
+      "event_bus_name": "eqstage01-event-bus",
+      "slack_webhook_url": "https://hooks.slack.com/services/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"
+    }
+  },
+
+  "tags": {
+    "Company": "eq",
+    "Environment": "eqstage01",
+    "Project": "eq",
+    "Terraform": true
+  }
+}
