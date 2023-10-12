@@ -1,7 +1,0 @@
-key             = "eqstage01/AWS-Health_Page-Status/terraform.tfstate"
-bucket          = "eqstage01-terraform-state-bucket"
-region          = "us-east-1"
-dynamodb_table  = "eqstage01-terraform-state-lock-table"
-encrypt         = "false"
-acl             = "bucket-owner-full-control"
-profile         = "eq-stage"
