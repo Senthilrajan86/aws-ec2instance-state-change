@@ -1,0 +1,21 @@
+{
+  "aws_profile": "eq-dev",
+  "aws_region": "us-east-1",
+  "lambda_function_create": true,
+  "lambda_function_map": {
+    "eq-dev-aws-health-page-status": {
+      "lambda_function_name": "eqdev01-health-page-status",
+      "event_bus_name": "eqdev01-event-bus",
+      "sns_slack_api_token_ssm_key": "/eqdev01/slack/alerting_api_token",
+      "environment": "dev",
+      "context": "eqdev01"      
+    }
+  },
+
+  "tags": {
+    "Company": "eq",
+    "Environment": "eqdev01",
+    "Project": "eq",
+    "Terraform": true
+  }
+}

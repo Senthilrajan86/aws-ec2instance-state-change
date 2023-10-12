@@ -1,0 +1,21 @@
+{
+  "aws_profile": "eq-stage",
+  "aws_region": "us-east-1",
+  "lambda_function_create": true,
+  "lambda_function_map": {
+    "eq-stage-aws-health-page-status": {
+      "lambda_function_name": "eqstage01-health-page-status",
+      "event_bus_name": "eqstage01-event-bus",
+      "sns_slack_api_token_ssm_key": "/eqstage01/slack/alerting_api_token",
+      "environment": "stage",
+      "context": "eqstage01"      
+    }
+  },
+
+  "tags": {
+    "Company": "eq",
+    "Environment": "eqstage01",
+    "Project": "eq",
+    "Terraform": true
+  }
+}
